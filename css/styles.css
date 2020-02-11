@@ -1,4 +1,12 @@
-body {
+.headerContent__logo {
   background-color: red;
+}
+
+.headerContent__right {
+  background-color: green;
+}
+
+.headerContent__right__leftpart {
+  background-color: pink;
 }
 /*# sourceMappingURL=styles.css.map */

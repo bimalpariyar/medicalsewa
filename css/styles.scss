@@ -1,3 +1,14 @@
 body {
-  background-color: red;
+}
+
+.headerContent {
+  &__logo {
+    background-color: red;
+  }
+  &__right {
+    background-color: green;
+    &__leftpart {
+      background-color: pink;
+    }
+  }
 }
