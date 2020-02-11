@@ -9,4 +9,8 @@
 .headerContent__right__leftpart {
   background-color: pink;
 }
+
+.headerContent__right__leftpart .normaluser__area .normaluser__top {
+  background-color: blue;
+}
 /*# sourceMappingURL=styles.css.map */

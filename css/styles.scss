@@ -9,6 +9,11 @@ body {
     background-color: green;
     &__leftpart {
       background-color: pink;
+      .normaluser__area {
+        .normaluser__top {
+          background-color: blue;
+        }
+      }
     }
   }
 }
