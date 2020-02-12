@@ -94,6 +94,10 @@ button:focus {
   outline: none;
 }
 
+p {
+  margin: 0;
+}
+
 /* =========== header css start =========== */
 .main__header {
   padding: 10px 0;
@@ -304,6 +308,12 @@ button:focus {
   display: inline-flex;
 }
 
+.home-slides .owl-dots {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+}
+
 /* =========== Home Banner css end =========== */
 /* =========== Product listing box css start =========== */
 .product__listing__box {
@@ -373,4 +383,57 @@ button:focus {
 }
 
 /* =========== Product Item css end =========== */
+/* =========== Callout css start =========== */
+.callouts__single {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 241px;
+}
+
+.callouts__single__text {
+  position: absolute;
+  left: 50px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.callouts__single__text h3 {
+  color: #fb272e;
+}
+
+.callouts__single__image {
+  position: relative;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.callouts__single:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  background-color: #f2f2f2;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+/* =========== Callout css end =========== */
 /*# sourceMappingURL=styles.css.map */
