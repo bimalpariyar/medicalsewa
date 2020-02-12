@@ -1,0 +1,10 @@
+@mixin dFlexWFullJusConCenter() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin dFlexWFullJusConSpacebtw() {
+  display: flex;
+  justify-content: space-between;
+}

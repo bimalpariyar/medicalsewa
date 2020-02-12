@@ -3,8 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/themify-icons.css" />
     <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/owl.carousel.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Document</title>
   </head>
@@ -24,13 +36,19 @@
             <div class="headerContent__right__leftpart">
               <div class="normaluser__area">
                 <div class="normaluser__top">
-                  <div class="hotline">
-                    <span class="ti-mobile"></span>
-                    Hotline: +977 9845325125
-                  </div>
-                  <div class="org__email">
-                    <span class="ti-mobile"></span>
-                    Email: info@medicalsewa.com
+                  <div class="header__org__inf">
+                    <div class="org__txt__hldr">
+                      <span class="ti-mobile icon"></span>
+                      <span class="header__inf__txt"
+                        >Hotline: +977 9845325125</span
+                      >
+                    </div>
+                    <div class="org__txt__hldr">
+                      <span class="ti-email icon"></span>
+                      <span class="header__inf__txt"
+                        >Email: info@medicalsewa.com</span
+                      >
+                    </div>
                   </div>
                   <div class="user__login__register__links">
                     <ul>
@@ -52,7 +70,26 @@
                 </div>
               </div>
             </div>
-            <div class="headerContent__right__rightpart"></div>
+            <div class="headerContent__right__rightpart">
+              <div class="users__links">
+                <div class="users__links__profilelink">
+                  <a href="#">
+                    <span class="ti-user"></span>
+                  </a>
+                </div>
+                <div class="users__links__notifications">
+                  <a href="#">
+                    <span class="ti-bell"></span>
+                  </a>
+                </div>
+                <div class="users__links__cart">
+                  <a href="#">
+                    <span class="ti-shopping-cart"></span>
+                    <span class="cart__items__num">12</span>
+                  </a>
+                </div>
+              </div>
+            </div>
             <!-- search area -->
           </div>
           <!-- Header right div -->
@@ -60,5 +97,75 @@
       </div>
     </header>
     <!-- ====== main header ends ====== -->
+    <!-- ====== home banners starts ====== -->
+    <section class="homebanner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="categorymenu">
+              <div class="categorymenu__head">
+                <span class="ti-menu icon"></span>
+                <span class="category__title">Categories</span>
+              </div>
+              <ul class="categorymenu__lists">
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-briefcase icon"></i>
+                    <span class="category__name">Surgical Equipments</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-microscope icon"></i>
+                    <span class="category__name">Medical Devices</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-briefcase icon"></i>
+                    <span class="category__name">Surgical Equipments</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-briefcase icon"></i>
+                    <span class="category__name">Surgical Equipments</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-briefcase icon"></i>
+                    <span class="category__name">Surgical Equipments</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="home-slides owl-carousel owl-theme">
+              <div class="item">
+                <div class="home__banner">
+                  <div class="home__banner__content">
+                    <div class="home__banner__text">
+                      <h1>Sed ut perspiciatis omnis iste natus</h1>
+                      <p>quis nostrum exercitationem ullam corporis</p>
+                      <a href="#">Order Now</a>
+                    </div>
+                    <div class="home__banner__image">
+                      <img src="./images/banner01.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== home banners starts ====== -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
