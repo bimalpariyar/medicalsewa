@@ -8,3 +8,7 @@
   display: flex;
   justify-content: space-between;
 }
+
+@mixin headingFont {
+  font-family: "FuturaPTMedium";
+}

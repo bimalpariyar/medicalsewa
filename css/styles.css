@@ -15,6 +15,49 @@
   font-style: normal;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #404141;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: "FuturaPTMedium";
+}
+
+.pd-tp-btm {
+  padding: 2.5rem 0;
+}
+
+/* =========== Bootstrap reset css start =========== */
+.nav-tabs,
+.nav-tabs .nav-link,
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus {
+  border: none;
+}
+
+.nav-link {
+  padding: 0;
+}
+
+/* =========== Bootstrap reset css start =========== */
+.withNavButtons .owl-nav {
+  border-top: 1px solid #ebebeb;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+.withNavButtons .owl-nav button {
+  border: 1px solid #b9b9b9 !important;
+  padding: 6px 15px !important;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -45,6 +88,10 @@ a {
 
 a:hover {
   text-decoration: none;
+}
+
+button:focus {
+  outline: none;
 }
 
 /* =========== header css start =========== */
@@ -165,12 +212,33 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main__header .headerContent__right__rightpart .users__links a {
   font-size: 22px;
   padding: 10px;
   margin-left: 10px;
+}
+
+.main__header .headerContent__right__rightpart .users__links .users__links__cart a {
+  background-color: #fb272e;
+  color: #fff;
+  position: relative;
+  padding: 10px 15px;
+}
+
+.main__header .headerContent__right__rightpart .users__links .users__links__cart a .cart__items__num {
+  position: absolute;
+  font-size: 11px;
+  background: #fff;
+  color: #000;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  right: 4px;
 }
 
 /* =========== header css end =========== */
@@ -204,4 +272,105 @@ a:hover {
 }
 
 /* =========== Category menu css end =========== */
+/* =========== Home Banner css start =========== */
+.home__banner__content {
+  position: relative;
+}
+
+.home__banner__content__text {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 0 0 10%;
+}
+
+.home__banner__content__text a {
+  background-color: #fb272e;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+/* =========== Home Banner css end =========== */
+/* =========== Product listing box css start =========== */
+.product__listing__box {
+  border: 1px solid #ebebeb;
+  padding: 15px 20px;
+}
+
+.product__listing__box__head {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 20px;
+}
+
+.product__listing__box__head .nav-item a {
+  font-family: "FuturaPTMedium";
+  font-size: 17px;
+  margin: 0 50px 0 0;
+}
+
+/* =========== Product listing box css end =========== */
+/* =========== Product Item css start =========== */
+.product__item .item__infos__cate {
+  margin: 10px 0;
+}
+
+.product__item .item__infos__prd__title h2 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.product__item .item__infos__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.product__item .item__infos__price .discounted__price {
+  text-decoration: line-through;
+}
+
+.product__item .item__infos__price .current__price {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.product__item .item__infos__view {
+  text-align: center;
+}
+
+.product__item .item__infos__view a {
+  background-color: #fb272e;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 30px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 20px 0 0 0;
+  border-radius: 50px;
+}
+
+/* =========== Product Item css end =========== */
 /*# sourceMappingURL=styles.css.map */

@@ -1,12 +1,3 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: $siteTextColor;
-}
-
 h1 {
   font-size: 2.5rem;
   font-family: "FuturaPTMedium";
@@ -30,15 +21,4 @@ h1 {
 }
 
 /* =========== Bootstrap reset css start =========== */
-
-.withNavButtons {
-  .owl-nav {
-    border-top: 1px solid $borderColor;
-    margin-top: 20px;
-    padding-top: 10px;
-    button {
-      border: 1px solid #b9b9b9 !important;
-      padding: 6px 15px !important;
-    }
-  }
-}
+/*# sourceMappingURL=common.css.map */
