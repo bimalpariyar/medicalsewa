@@ -43,3 +43,26 @@ h1 {
     }
   }
 }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid $borderColor;
+  border-bottom: 1px solid $borderColor;
+  padding: 15px 0;
+  ul {
+    li {
+      display: inline-flex;
+      a {
+        background-color: $secondayBgColor;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-weight: 600;
+      }
+    }
+  }
+}

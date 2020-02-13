@@ -249,6 +249,8 @@ p {
   &__image {
   }
   .item__infos {
+    border: 1px solid $borderColor;
+    padding: 10px 15px 30px 15px;
     &__cate {
       margin: 10px 0;
     }
@@ -384,3 +386,40 @@ p {
   }
 }
 /* =========== Footer css end =========== */
+
+/* =========== Categroy page css start =========== */
+
+.innerpage__banner__content {
+  position: relative;
+  img {
+    width: 100%;
+  }
+  &__texts {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 0 0 0 4rem;
+  }
+}
+
+.product__listing {
+  &__head {
+    display: flex;
+    border: 1px solid $borderColor;
+    .rsult__num {
+      flex: 1;
+      padding: 12px 20px;
+    }
+    select {
+      background-color: $siteSecondaryColor;
+      border: none;
+      color: #fff;
+      padding: 10px;
+    }
+  }
+}
+
+/* =========== Categroy page css end =========== */
