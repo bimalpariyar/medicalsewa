@@ -12,3 +12,14 @@
 @mixin headingFont {
   font-family: "FuturaPTMedium";
 }
+
+@mixin dFlexWFullJusConSpacebtwaligncenter() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin dFlexWFullJusConSpacebtwdircolumn() {
+  display: flex;
+  flex-direction: column;
+}

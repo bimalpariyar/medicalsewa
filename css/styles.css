@@ -22,6 +22,7 @@ h4,
 h5,
 h6 {
   color: #404141;
+  margin: 0;
 }
 
 h1 {
@@ -306,6 +307,7 @@ p {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  margin: 20px 0 0 0;
 }
 
 .home-slides .owl-dots {
@@ -436,4 +438,101 @@ p {
 }
 
 /* =========== Callout css end =========== */
+/* =========== Footer css start =========== */
+.footer__top {
+  background-color: #f2f2f2;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer__top__callouts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__top__callouts .foot__call {
+  margin: 0 0 0 20px;
+}
+
+.footer__top__callouts .foot__call h4 {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.footer__bottom__infos .foot__info__texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 0 0 0;
+}
+
+.footer__bottom__infos .foot__info__texts__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__bottom__infos .foot__info__texts__left .callinst {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 0 0 30px;
+}
+
+.footer__bottom__infos .foot__info__texts__left .callinst .getcall {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.footer__bottom__infos .foot__info__texts__left .callinst .phnumber {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.footer__bottom__infos .foot__info__texts__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__bottom__infos .foot__info__texts__right .betouch {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.foot__menus__head h5 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+}
+
+.foot__menus ul li {
+  margin: 0 0 0.3rem 0;
+}
+
+/* =========== Footer css end =========== */
 /*# sourceMappingURL=styles.css.map */
