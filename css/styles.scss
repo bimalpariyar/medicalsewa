@@ -23,6 +23,7 @@ $siteSecondaryColor: #fb272e;
 $siteTertiaryColor: #f2f2f2;
 $borderColor: #ebebeb;
 $secondayBgColor: #f2f2f2;
+$inputBorderColor: #ced4da;
 
 @import "mixins";
 @import "common";
@@ -506,3 +507,23 @@ p {
 }
 
 /* =========== Categroy page css end =========== */
+
+/* =========== Login page css start =========== */
+
+.authform__left {
+  &__info {
+    p {
+      margin: 20px 0;
+    }
+    &__inst {
+      @include flexbox(flex, _, _, _);
+      .inst__text {
+        margin: 0 0 0 30px;
+        font-weight: 600;
+        max-width: 60%;
+      }
+    }
+  }
+}
+
+/* =========== Login page css end =========== */

@@ -109,6 +109,45 @@ h1 {
   font-weight: 600;
 }
 
+.withnoheadfoot {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.uniform__form .inform__text {
+  margin-bottom: 15px;
+}
+
+.uniform__form__input__holder {
+  margin: 0 0 15px 0;
+}
+
+.uniform__form__input__holder input {
+  border: 1px solid #ced4da;
+  width: 100%;
+  height: 33px;
+  padding: 0 0 0 20px;
+}
+
+.uniform__form__input__holder button {
+  width: 100%;
+  background-color: #106ee3;
+  color: #fff;
+  font-weight: 600;
+  height: 33px;
+}
+
+.uniform__form .inst__for__user {
+  margin: 1rem 0 0 0;
+  border-top: 1px solid #f2f2f2;
+  padding-top: 1rem;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -737,4 +776,32 @@ p {
 }
 
 /* =========== Categroy page css end =========== */
+/* =========== Login page css start =========== */
+.authform__left__info p {
+  margin: 20px 0;
+}
+
+.authform__left__info__inst {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: _;
+      -ms-flex-pack: _;
+          justify-content: _;
+  -webkit-box-align: _;
+      -ms-flex-align: _;
+          align-items: _;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: _;
+          flex-direction: _;
+}
+
+.authform__left__info__inst .inst__text {
+  margin: 0 0 0 30px;
+  font-weight: 600;
+  max-width: 60%;
+}
+
+/* =========== Login page css end =========== */
 /*# sourceMappingURL=styles.css.map */

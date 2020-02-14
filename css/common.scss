@@ -79,3 +79,36 @@ h1 {
     }
   }
 }
+
+.withnoheadfoot {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.uniform__form {
+  .inform__text {
+    margin-bottom: 15px;
+  }
+  &__input__holder {
+    margin: 0 0 15px 0;
+    input {
+      border: 1px solid $inputBorderColor;
+      width: 100%;
+      height: 33px;
+      padding: 0 0 0 20px;
+    }
+    button {
+      width: 100%;
+      background-color: $sitePrimayColor;
+      color: #fff;
+      font-weight: 600;
+      height: 33px;
+    }
+  }
+  .inst__for__user {
+    margin: 1rem 0 0 0;
+    border-top: 1px solid $secondayBgColor;
+    padding-top: 1rem;
+  }
+}
