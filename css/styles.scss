@@ -56,7 +56,10 @@ a:hover {
   text-decoration: none;
 }
 
-button:focus {
+button:focus,
+select:focus,
+input:focus,
+textarea:focus {
   outline: none;
 }
 
@@ -418,6 +421,86 @@ p {
       border: none;
       color: #fff;
       padding: 10px;
+    }
+  }
+}
+
+.inline__item {
+  display: flex;
+  &__image {
+    width: 60px;
+    img {
+      width: 100%;
+    }
+  }
+  &__infos {
+    padding: 0 0 0 10px;
+    max-width: 70%;
+    h2 {
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .prc {
+      font-weight: 600;
+      color: $siteSecondaryColor;
+    }
+  }
+}
+
+.specialoffers {
+  .inline__item {
+    padding: 0 0 10px 0;
+    margin: 0 0 10px 0;
+    border-bottom: 1px solid $borderColor;
+    &:last-child {
+      padding: 0;
+      margin: 0;
+      border: none;
+    }
+  }
+}
+
+.sidevertical__banner {
+  background-color: $siteTertiaryColor;
+  padding: 2rem 0;
+  .sidevertical__content {
+    padding: 1rem;
+    &__text {
+      margin: 0 0 10px 0;
+      h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 0 0 10px 0;
+      }
+    }
+    &__prc {
+      display: flex;
+      align-items: center;
+      .disc__prc {
+        text-decoration: line-through;
+      }
+      .curr__prc {
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 0 0 0 10px;
+        color: $siteSecondaryColor;
+      }
+    }
+    &__view {
+      a {
+        background-color: $siteSecondaryColor;
+        display: inline-flex;
+        margin: 20px 0 0 0;
+        border-radius: 50px;
+        color: #fff;
+        font-weight: 600;
+        padding: 10px 30px;
+      }
+    }
+  }
+  &__image {
+    img {
+      width: 100%;
     }
   }
 }

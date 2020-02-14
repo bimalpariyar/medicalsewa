@@ -66,3 +66,16 @@ h1 {
     }
   }
 }
+
+.boxwithBorderPadding {
+  border: 1px solid #ebebeb;
+  padding: 15px 20px;
+  &__head {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 20px;
+    .sectitle {
+      font-weight: 600;
+    }
+  }
+}

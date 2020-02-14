@@ -68,6 +68,7 @@ h1 {
           justify-content: center;
   border-top: 1px solid #ebebeb;
   border-bottom: 1px solid #ebebeb;
+  padding: 15px 0;
 }
 
 .pagination ul li {
@@ -90,6 +91,21 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 50%;
+  font-weight: 600;
+}
+
+.boxwithBorderPadding {
+  border: 1px solid #ebebeb;
+  padding: 15px 20px;
+}
+
+.boxwithBorderPadding__head {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 20px;
+}
+
+.boxwithBorderPadding__head .sectitle {
   font-weight: 600;
 }
 
@@ -125,7 +141,10 @@ a:hover {
   text-decoration: none;
 }
 
-button:focus {
+button:focus,
+select:focus,
+input:focus,
+textarea:focus {
   outline: none;
 }
 
@@ -619,6 +638,102 @@ p {
   border: none;
   color: #fff;
   padding: 10px;
+}
+
+.inline__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.inline__item__image {
+  width: 60px;
+}
+
+.inline__item__image img {
+  width: 100%;
+}
+
+.inline__item__infos {
+  padding: 0 0 0 10px;
+  max-width: 70%;
+}
+
+.inline__item__infos h2 {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.inline__item__infos .prc {
+  font-weight: 600;
+  color: #fb272e;
+}
+
+.specialoffers .inline__item {
+  padding: 0 0 10px 0;
+  margin: 0 0 10px 0;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.specialoffers .inline__item:last-child {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.sidevertical__banner {
+  background-color: #f2f2f2;
+  padding: 2rem 0;
+}
+
+.sidevertical__banner .sidevertical__content {
+  padding: 1rem;
+}
+
+.sidevertical__banner .sidevertical__content__text {
+  margin: 0 0 10px 0;
+}
+
+.sidevertical__banner .sidevertical__content__text h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+
+.sidevertical__banner .sidevertical__content__prc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidevertical__banner .sidevertical__content__prc .disc__prc {
+  text-decoration: line-through;
+}
+
+.sidevertical__banner .sidevertical__content__prc .curr__prc {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 0 10px;
+  color: #fb272e;
+}
+
+.sidevertical__banner .sidevertical__content__view a {
+  background-color: #fb272e;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 20px 0 0 0;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 30px;
+}
+
+.sidevertical__banner__image img {
+  width: 100%;
 }
 
 /* =========== Categroy page css end =========== */
