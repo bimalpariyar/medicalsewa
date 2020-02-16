@@ -23,10 +23,3 @@
   display: flex;
   flex-direction: column;
 }
-
-@mixin flexbox($dflex, $justifiyContent, $alignItems, $flexDir) {
-  display: $dflex;
-  justify-content: $justifiyContent;
-  align-items: $alignItems;
-  flex-direction: $flexDir;
-}

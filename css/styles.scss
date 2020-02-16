@@ -28,6 +28,18 @@ $inputBorderColor: #ced4da;
 @import "mixins";
 @import "common";
 
+@mixin flexbox($dflex, $justifiyContent, $alignItems, $flexDir) {
+  display: $dflex;
+  justify-content: $justifiyContent;
+  align-items: $alignItems;
+  flex-direction: $flexDir;
+}
+
+@mixin fonts($fontSize, $fontWeight) {
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -171,7 +183,11 @@ p {
 /* =========== Category menu css start =========== */
 
 .categorymenu {
-  border: 1px solid $siteSecondaryColor;
+  position: relative;
+  .categorymenu__lists {
+    border: 1px solid $siteSecondaryColor;
+    background-color: #fff;
+  }
   .icon {
     margin-right: 10px;
   }
@@ -527,3 +543,150 @@ p {
 }
 
 /* =========== Login page css end =========== */
+
+.header__bottom {
+  background-color: #737374;
+  .categorymenu__head {
+    cursor: pointer;
+    &:hover {
+      background-color: $sitePrimayColor;
+    }
+  }
+  .categorymenu__lists {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+    border-top: none;
+    border-color: $sitePrimayColor;
+  }
+  &__sitemenu {
+    @include flexbox(flex, _, center, _);
+    height: 100%;
+    ul {
+      li {
+        @include flexbox(inline-flex, _, center, _);
+        margin: 0 15px 0 0;
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.siteBgColor {
+  background-color: $sitePrimayColor;
+}
+
+.iconCallout {
+  border: 1px solid $siteSecondaryColor;
+  padding: 2rem 1.5rem;
+  .callicon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: $siteSecondaryColor;
+  }
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* =========== Product Detail css start =========== */
+.product__det__main {
+  img {
+    width: 100%;
+  }
+}
+.product__det {
+  &__cateBrand {
+    @include flexbox(flex, _, center, _);
+    margin: 0 0 1rem 0;
+    .cateName {
+      margin: 0 1rem 0 0;
+    }
+  }
+  &__meta {
+    margin: 0 0 1rem 0;
+    h1 {
+      font-size: 1.5rem;
+      margin: 0 0 0.5rem 0;
+    }
+  }
+  &__availability {
+    @include flexbox(flex, _, center, _);
+    margin: 0 0 1rem 0;
+    .instocktag {
+      background-color: #00ff66;
+      font-size: 12px;
+      border-radius: 50px;
+      padding: 4px 20px;
+      margin: 0 0 0 40px;
+    }
+  }
+  &__iteminfo {
+    margin: 0 0 1rem 0;
+  }
+  &__prices {
+    @include flexbox(flex, _, center, _);
+    .prevPrice {
+      @include fonts(15px, 600);
+      text-decoration: line-through;
+    }
+    .currPrice {
+      @include fonts(25px, 600);
+      margin: 0 0 0 30px;
+      color: $siteSecondaryColor;
+    }
+  }
+  &__callinfo {
+    @include flexbox(flex, _, center, _);
+    margin: 0 0 1rem 0;
+    .callinfoText {
+      margin: 0 0 0 2rem;
+    }
+  }
+  &__btns {
+    @include flexbox(flex, _, center, _);
+    .product__qty {
+      .produAddQty {
+        width: 50px;
+        text-align: center;
+        margin: 0 10px;
+      }
+      button {
+        @include flexbox(inline-flex, center, center, _);
+        background-color: #737374;
+        @include fonts(15px, 600);
+        color: #fff;
+        width: 25px;
+        height: 25px;
+        border-radius: 50px;
+      }
+    }
+    .add__cartbtn {
+      a {
+        background-color: $siteSecondaryColor;
+        color: #fff;
+        padding: 12px 30px;
+        display: inline-flex;
+        margin: 0 0 0 2rem;
+        border-radius: 50px;
+      }
+    }
+  }
+}
+
+.desctiption__wrapper {
+  ul {
+    li {
+      @include flexbox(flex, _, _, _);
+      .desc__t {
+        @include fonts(_, 600);
+      }
+    }
+  }
+}
+
+/* =========== Product Detail css start =========== */
